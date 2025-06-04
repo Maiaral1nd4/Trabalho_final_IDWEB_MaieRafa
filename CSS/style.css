@@ -1,0 +1,29 @@
+.logo-navbar {
+    width: 130px;
+    height: auto;
+}
+
+.nav-item a {
+    margin-right: 30px;
+}
+
+.navbar-custom {
+    background-color: black;
+}
+
+#menu-nav {
+    font-size: 1.2rem;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#carouselExampleCaptions {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#carouselExampleCaptions img {
+    max-height: 450px;
+    object-fit: cover;
+    width: 100%;
+}
