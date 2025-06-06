@@ -35,7 +35,7 @@
                                 Inicial</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="filmes.html" target="_blank">Filmes</a>
+                            <a class="nav-link " href="filmes.html" target="_blank">Filmes</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="series.html" target="_blank">Série</a>
@@ -49,8 +49,10 @@
             </div>
         </nav>
         <!-- Introdução-->
-        <h1>Bem-vindo ao CineFlix!</h1>
-        <p>Seu guia para explorar os melhores filmes e séries disponíveis. Descubra lançamentos, clássicos, curiosidades
+        <!-- O Bootstrap tem classes fs-1, fs-2, ..., fs-6 (onde fs-1 é a maior).-->
+        <h1 class="fs-1">Bem-vindo ao CineFlix!</h1>
+        <p class="fs-4">Seu guia para explorar os melhores filmes e séries disponíveis. Descubra
+            lançamentos, clássicos, curiosidades
             e muito mais!</p>
 
         <div id="carouselExampleCaptions" class="carousel slide">
@@ -64,24 +66,24 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="IMAGENS/Homem.png" class="d-block w-100" alt="Homem no cinema">
+                    <img src="IMAGENS/cinema.png" class="d-block w-100" alt="Homem no cinema">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>“Explore um mundo de filmes e séries selecionados especialmente para você.”</p>
+                        <p style="background-color: black;">“Explore um mundo de filmes e séries selecionados
+                            especialmente para você.”</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="IMAGENS/Cinema.png" class="d-block w-100" alt="Cinema">
+                    <img src="IMAGENS/pipoca.png" class="d-block w-100" alt="Cinema">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>“Fique por dentro dos lançamentos mais quentes do cinema e das plataformas de streaming.”</p>
+                        <p style="background-color: black;">“Fique por dentro dos lançamentos mais quentes do cinema e
+                            das plataformas de streaming.”</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="IMAGENS/Bastidores.png" class="d-block w-100" alt="Bastidores">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>“Descubra curiosidades e fatos incríveis do universo cinematográfico.”</p>
+                        <p style="background-color: black;">“Descubra curiosidades e fatos incríveis do universo
+                            cinematográfico.”</p>
                     </div>
                 </div>
             </div>
@@ -96,13 +98,147 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+        <div class="text-center my-5">
+            <h1>Explore os melhores do cinema:</h1>
+        </div>
+
+        <!-- Envolvendo todos os cards em estrutura de grid-->
+        <!-- o g-4 serve para aplica espaçamento entre colunas e entre as linhas automaticamente-->
+        <div class="container text-center">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+
+                <!-- cada card com a class col para q o boostrap entenda q é uma coluna--->
+                <!-- co h-100 serve para deixar todos os cards com a mesma altura--->
+                <div class="col">
+                    <div class="card text-white bg-dark mb-3 h-100" style="max-width: 400px;">
+                        <img src="IMAGENS/interestelar.png" class="img-fluid" alt="Capa do Filme Interestelar">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Interestelar </h5>
+                            <p class="card-text">Em um futuro onde a Terra está morrendo, um grupo de astronautas viaja
+                                por um
+                                buraco de minhoca em busca de um novo lar para a humanidade.</p>
+                            <a href="https://youtu.be/zSWdZVtXT7E?si=Uj6RdZyk3td3E_aR"
+                                class="btn btn-danger">Assistir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card text-white bg-dark mb-3 h-100" style="max-width: 400px;">
+                        <img src="IMAGENS/titanic.png" class="img-fluid" alt="Capa do Filme Titanic">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Titanic</h5>
+                            <p class="card-text">A saga da família mafiosa Corleone, liderada por Vito Corleone,
+                                enquanto seu filho
+                                Michael relutantemente assume os negócios da família.</p>
+                            <a href="https://youtu.be/2e-eXJ6HgkQ?si=jlKq9mQ-tCwiZdz6"
+                                class="btn btn-danger">Assistir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card text-white bg-dark mb-3 h-100" style="max-width: 400px;">
+                        <img src="IMAGENS/coringa.png" class="img-fluid" alt="Capa do Filme Coringa">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Coringa</h5>
+                            <p class="card-text">Arthur Fleck, um comediante falido e isolado, desce à loucura até se
+                                transformar no
+                                icônico vilão Coringa.</p>
+                            <a href="https://youtu.be/zAGVQLHvwOY?si=j8umZx4wEKaxfYWB"
+                                class="btn btn-danger">Assistir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card text-white bg-dark mb-3 h-100" style="max-width: 400px;">
+                        <img src="IMAGENS/vingadores.png" class="img-fluid" alt="Capa do Filme Vingadores: Ultimato">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Vingadores: Ultimato</h5>
+                            <p class="card-text">Os Vingadores sobreviventes se unem para desfazer o caos causado por
+                                Thanos e
+                                restaurar o equilíbrio do universo.</p>
+                            <a href="https://youtu.be/TcMBFSGVi1c?si=_ddaIY54jxmgh6jS"
+                                class="btn btn-danger">Assistir</a>
+                        </div>
+                    </div>
+                </div>
 
 
+                <div class="col">
+                    <div class="card text-white bg-dark mb-3 h-100 style=" max-width: 400px;">
+                        <img src="IMAGENS/forest.png" class="img-fluid" alt="Capa do Filme Forrest Gump">
 
+                        <div class="card-body">
+                            <h5 class="card-title"> Forrest Gump</h5>
+                            <p class="card-text">A história de Forrest, um homem com QI baixo, que vive eventos
+                                históricos dos EUA
+                                com inocência, amor e persistência.</p>
+                            <a href="https://youtu.be/bLvqoHBptjg?si=G4ubGMwn2pXdQriN"
+                                class="btn btn-danger">Assistir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card text-white bg-dark mb-3 h-100" style="max-width: 400px;">
+                        <img src="IMAGENS/a origem.png" class="img-fluid" alt="Capa do Filme A Origem (Inception)">
+
+                        <div class="card-body">
+                            <h5 class="card-title">A Origem (Inception)</h5>
+                            <p class="card-text">Dom Cobb é um ladrão que invade sonhos para roubar segredos. Agora,
+                                precisa
+                                implantar uma ideia na mente de alguém.</p>
+                            <a href="https://youtu.be/YoHD9XEInc0?si=rt8lCRimFqnCL0DX"
+                                class="btn btn-danger">Assistir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card text-white bg-dark mb-3 h-100" style="max-width: 400px;">
+                        <img src="IMAGENS/pantera.png" class="img-fluid" alt="Capa do Filme Pantera Negra">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Pantera Negra</h5>
+                            <p class="card-text">T'Challa retorna a Wakanda para assumir o trono como Pantera Negra, mas
+                                enfrenta
+                                desafios que ameaçam seu reino e o mundo.</p>
+                            <a href="https://youtu.be/dxWvtMOGAhw?si=HDC9uWSdlKhQ-X3i"
+                                class="btn btn-danger">Assistir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card text-white bg-dark mb-3 h-100" style="max-width: 400px;">
+                        <img src="IMAGENS/rei.png" class="img-fluid" alt="Capa do Filme O Rei Leão">
+
+                        <div class="card-body">
+                            <h5 class="card-title">O Rei Leão</h5>
+                            <p class="card-text">Simba, um jovem leão herdeiro do trono, precisa encontrar seu lugar no
+                                ciclo da
+                                vida após a morte de seu pai.</p>
+                            <a href="https://youtu.be/7TavVZMewpY?si=F5FwyMp4oT6QG2X7"
+                                class="btn btn-danger">Assistir</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </body>
+
+
+
     <!-- Rodapé da Página-->
     <footer class="text-center mt-5">
-        <p>&copy; 2025 CineList. Todos os direitos reservados.</p>
+        <p>&copy; 2025 CineFlix. Todos os direitos reservados.</p>
     </footer>
 
 </body>
